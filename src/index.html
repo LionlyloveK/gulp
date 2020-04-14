@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 引入样式 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+
+<body>
+  <div id="app">
+    <div>
+      <el-input v-model="input" placeholder="请输入内容"></el-input>
+      aaa
+    </div>
+  </div>
+</body>
+<!-- 先引入 Vue -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+  var str = "nininihaoa";
+  var o = {};
+  for (var i = 0; i < str.length; i++) {
+    var char = str.charAt(i);
+
+    if (o[char]) {
+      o[char]++; //次数加1
+    } else {
+      o[char] = 1; //若第一次出现，次数记为1
+    }
+  }
+  //遍历对象，找到出现次数最多的字符的次数
+  var max = 0;
+  for (var key in o) {
+    if (max < o[key]) {
+      max = o[key]; //max始终储存次数最大的那个
+    }
+  }
+  for (var key in o) {
+    if (o[key] == max) {}
+  }
+  new Vue({
+    el: '#app',
+    data: function () {
+      return {
+        input: ''
+      }
+    }
+  })
+  var fun = function () {
+    this.info = {
+      name: 'peter',
+      age: 25
+    }
+  }
+
+  var fun = function(){}
+
+fun.prototype = {    
+    name : 'peter',    
+    age : 25    
+}
+
+var a = new fun();
+var b = new fun();
+
+a.name = 'jack';
+b.name = 'tom';
+  console.log(a.name);
+  console.log(b.name);
+</script>
+
+</html>

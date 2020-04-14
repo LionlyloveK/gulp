@@ -1,0 +1,21 @@
+{
+  "name": "0309web",
+  "description": "航创官网",
+  "main": "index.js",
+  "authors": [
+    "CoderQiQin521 <coderqiqin@aliyun.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/CoderQiQin521/hangchuang-web",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/js/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "countup": "^2.0.4",
+  }
+}
