@@ -30,7 +30,7 @@
     "gulp-zip": "^5.0.1"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "mint-ui": "^1.0.2",
     "swiper": "^5.3.6",
     "vue": "^2.6.11",
